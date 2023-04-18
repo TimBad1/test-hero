@@ -10,3 +10,43 @@
     --c-ball-3: #FD82C1;
 }
 
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.3em;
+    color: var(--c-primary);
+
+}
+
+body {
+    background-image: url('./assets/images/bg.png');
+    background-size: cover;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.text {
+    max-width: 560px;
+}
+
+.text__title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.text__first-line {
+    display: block;
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+}
