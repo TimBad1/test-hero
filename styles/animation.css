@@ -7,7 +7,7 @@
 .planet {
     position: absolute;
     top: 50%;
-    left: 110px;
+    left: 0;
     transform:  rotate(0) translate(0px, -50%);
 }
 
@@ -85,14 +85,14 @@
     background-color: var(--c-ball-2);
     width: 325px;
     height: 325px;
-    transform: translate(-123px, -142px);
+    transform: translate(-38%, -44%);
 }
 
 .animation-phone .animation-phone__big-ball:nth-of-type(1) {
     background-color: var(--c-ball-3);
     width: 260px;
     height: 260px;
-    transform: translate(-92px, -218px);
+    transform: translate(-34%, -84%);
 }
 
 .animation-phone .animation-phone__small-ball:nth-of-type(3) {
@@ -125,3 +125,139 @@
       transform: rotate(360deg);
     }
   }
+
+ @media screen and (max-width: 767px) {
+    .animation-phone .animation-phone__big-ball:nth-of-type(3) {
+        background-color: var(--c-ball-1);
+        width: 220px;
+        height: 220px;
+        transform: translate(-71%, -36%) scale(.6);
+    }
+    
+    .animation-phone .animation-phone__big-ball:nth-of-type(2) {
+        background-color: var(--c-ball-2);
+        width: 325px;
+        height: 325px;
+        transform: translate(-42%, -44%) scale(.6);
+    }
+    
+    .animation-phone .animation-phone__big-ball:nth-of-type(1) {
+        background-color: var(--c-ball-3);
+        width: 260px;
+        height: 260px;
+        transform: translate(-51%, -62%) scale(.6);
+    }
+    
+    .animation-phone .animation-phone__small-ball:nth-of-type(3) {
+        width: 42px;
+        height: 42px;
+        background-color: var(--c-ball-3);
+        transform: translate(180px, 256px);
+    }
+    
+    .animation-phone .animation-phone__small-ball:nth-of-type(2) {
+        width: 35px;
+        height: 35px;
+        background-color: var(--c-ball-2);
+        transform: translate(-262px, 25px);
+    }
+    
+    .animation-phone .animation-phone__small-ball:nth-of-type(1) {
+        width: 35px;
+        height: 35px;
+        background-color: var(--c-ball-1);
+        transform: translate(137px, -275px);
+    }
+    
+ }
+
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .animation-phone .animation-phone__big-ball:nth-of-type(3) {
+        background-color: var(--c-ball-1);
+        width: 220px;
+        height: 220px;
+        transform: translate(-71%, -36%) scale(.6);
+    }
+    
+    .animation-phone .animation-phone__big-ball:nth-of-type(2) {
+        background-color: var(--c-ball-2);
+        width: 325px;
+        height: 325px;
+        transform: translate(-42%, -44%) scale(.6);
+    }
+    
+    .animation-phone .animation-phone__big-ball:nth-of-type(1) {
+        background-color: var(--c-ball-3);
+        width: 260px;
+        height: 260px;
+        transform: translate(-51%, -62%) scale(.6);
+    }
+    
+    .animation-phone .animation-phone__small-ball:nth-of-type(3) {
+        width: 42px;
+        height: 42px;
+        background-color: var(--c-ball-3);
+        transform: translate(180px, 256px);
+    }
+    
+    .animation-phone .animation-phone__small-ball:nth-of-type(2) {
+        width: 35px;
+        height: 35px;
+        background-color: var(--c-ball-2);
+        transform: translate(-262px, 25px);
+    }
+    
+    .animation-phone .animation-phone__small-ball:nth-of-type(1) {
+        width: 35px;
+        height: 35px;
+        background-color: var(--c-ball-1);
+        transform: translate(137px, -275px);
+    }
+    
+ }
+
+ @media screen and (min-width: 1200px) {
+
+    .animation-phone .animation-phone__big-ball:nth-of-type(3) {
+        background-color: var(--c-ball-1);
+        width: 220px;
+        height: 220px;
+        transform: translate(-92%, -67%);
+    }
+    
+    .animation-phone .animation-phone__big-ball:nth-of-type(2) {
+        background-color: var(--c-ball-2);
+        width: 325px;
+        height: 325px;
+        transform: translate(-38%, -44%);
+    }
+    
+    .animation-phone .animation-phone__big-ball:nth-of-type(1) {
+        background-color: var(--c-ball-3);
+        width: 260px;
+        height: 260px;
+        transform: translate(-34%, -84%);
+    }
+    
+    .animation-phone .animation-phone__small-ball:nth-of-type(3) {
+        width: 42px;
+        height: 42px;
+        background-color: var(--c-ball-3);
+        transform: translate(180px, 256px);
+    }
+    
+    .animation-phone .animation-phone__small-ball:nth-of-type(2) {
+        width: 35px;
+        height: 35px;
+        background-color: var(--c-ball-2);
+        transform: translate(-262px, 25px);
+    }
+    
+    .animation-phone .animation-phone__small-ball:nth-of-type(1) {
+        width: 35px;
+        height: 35px;
+        background-color: var(--c-ball-1);
+        transform: translate(137px, -275px);
+    }    
+ }
