@@ -1,0 +1,127 @@
+.animation-planet {
+    position: relative;
+    height: 60px;
+}
+
+.saturn,
+.planet {
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    transform:  rotate(0) translate(0px, -50%);
+}
+
+.saturn {
+    width: 54px;
+    height: 59px;
+    background-image: url('../assets/images/saturn.svg');
+}
+.planet {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    
+    animation: planet 3s cubic-bezier(.4,1,.6,1) .2s reverse forwards;
+}
+
+.animation-planet .planet:nth-of-type(1) {
+    width: 48px;
+    height: 48px;
+    background-color: var(--c-ball-3);
+    transform:  rotate(0) translate(18px, -37px);
+}
+
+.animation-planet .planet:nth-of-type(2) {
+    background-color: var(--c-ball-2);
+    transform:  rotate(120deg) translate(-21px, -8px);
+}
+
+.animation-planet .planet:nth-of-type(3) {
+    background-color: var(--c-ball-1);
+    transform:  rotate(240deg) translate(22px, 9px);
+}
+
+@keyframes planet {
+    100% {
+        transform: rotate(700deg) translate(500px) ;
+    }
+}
+
+
+.animation-phone {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    width: 100%;
+    transform: translate(0%, 0%);
+    z-index: -1;
+}
+
+.animation-phone.anim-1 {
+    animation: spin 15s linear 0s infinite;
+}
+
+.animation-phone.anim-2 {
+    animation: spin 15s linear 0s infinite reverse;
+}
+
+.animation-phone__big-ball,
+.animation-phone__small-ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+}
+
+.animation-phone .animation-phone__big-ball:nth-of-type(3) {
+    background-color: var(--c-ball-1);
+    width: 220px;
+    height: 220px;
+    transform: translate(-92%, -67%);
+}
+
+.animation-phone .animation-phone__big-ball:nth-of-type(2) {
+    background-color: var(--c-ball-2);
+    width: 325px;
+    height: 325px;
+    transform: translate(-123px, -142px);
+}
+
+.animation-phone .animation-phone__big-ball:nth-of-type(1) {
+    background-color: var(--c-ball-3);
+    width: 260px;
+    height: 260px;
+    transform: translate(-92px, -218px);
+}
+
+.animation-phone .animation-phone__small-ball:nth-of-type(3) {
+    width: 42px;
+    height: 42px;
+    background-color: var(--c-ball-3);
+    transform: translate(180px, 256px);
+}
+
+.animation-phone .animation-phone__small-ball:nth-of-type(2) {
+    width: 35px;
+    height: 35px;
+    background-color: var(--c-ball-2);
+    transform: translate(-262px, 25px);
+}
+
+.animation-phone .animation-phone__small-ball:nth-of-type(1) {
+    width: 35px;
+    height: 35px;
+    background-color: var(--c-ball-1);
+    transform: translate(137px, -275px);
+}
+
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

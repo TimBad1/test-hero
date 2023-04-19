@@ -14,8 +14,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animation.css">
 </head>
 <body class="body">
+    <div class="animation-planet container">
+        <div class="planet"></div>
+        <div class="planet"></div>
+        <div class="planet"></div>
+        <div class="saturn"></div>
+    </div>
+
     <section class="section container hero">
         <div class="text">
             <h1 class="text__title">
@@ -39,7 +47,7 @@
             </ul>
 
             <a href="#" class="text__link">
-                <img src="./assets/images/apple.svg" alt="Выберите ваш знак зодиака">
+                <img src="./assets/images/apple.svg" alt="Загрузить через Аппстор">
             </a>
 
             <p class="text__descr">
@@ -47,7 +55,20 @@
             </p>           
         </div>
 
-        <!-- <img src="./assets/images/phone.png" alt="Всё возможно - всё в твоих руках"> -->
+        <div class="hero__img-wrap">
+            <img class="hero__img" src="./assets/images/phone.png" alt="Выберите ваш знак зодиака">
+            <div class="animation-phone anim-1">
+                <div class="animation-phone__big-ball"></div>
+                <div class="animation-phone__big-ball"></div>
+                <div class="animation-phone__big-ball"></div>
+            </div>
+            <div class="animation-phone anim-2">
+                <div class="animation-phone__small-ball"></div>
+                <div class="animation-phone__small-ball"></div>
+                <div class="animation-phone__small-ball"></div>
+            </div>
+        </div>
+        
     </section>   
 
     <footer class="footer container">
@@ -80,5 +101,7 @@
             </ul>
         </div>
     </footer>    
+
+
 </body>
 </html>
