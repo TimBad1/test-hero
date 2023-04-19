@@ -114,17 +114,25 @@ body {
 
 .social__link {
     display: block;
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
+    border: 2px solid transparent;
+    transition: border .2s ease, opacity .2s ease;
+}
+
+.social__link:hover,
+.social__link:focus {
+    border: 2px solid var(--c-primary);
+    opacity: .8;
 }
 
 .social__item:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 14px;
 }
 
 .instagram {
-    background: center url('../assets/images/inst.svg') no-repeat, center / cover url('../assets/images/inst-bg.png') no-repeat;
+    background: center url('../assets/images/inst.svg') no-repeat, center / 120% url('../assets/images/inst-bg.png') no-repeat;
 }
 
 .vk {
